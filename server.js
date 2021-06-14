@@ -1,9 +1,8 @@
-const https = require('https');
-const fs = require('fs');
+const http = require('http');
 
 const PORT = process.env.PORT || 5000
 
-const server = https.createServer((req, res) => {
+const server = http.createServer((req, res) => {
   if (req.url === '/statistic') {
     console.log('statistic ', Date.now());
   }
