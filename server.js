@@ -14,6 +14,6 @@ const server = https.createServer((req, res) => {
   res.end('Hellow world');
 });
 
-server.listen(port, () => {
-  console.log(`Server running at ${port}`);
+server.listen(PORT, () => {
+  console.log(`Server running at ${PORT}`);
 });
